@@ -1,12 +1,11 @@
-const fs = require('fs');
+import fs from "fs";
 
-class FileReader {
-    constructor(filePath) {
-        this.filePath = filePath;
-    }
+export default class FileReader {
+  constructor(filePath) {
+    this.filePath = filePath;
+  }
 
-    read() {
-        return fs.readFileSync(this.filePath, 'utf8');
-    }
+  read() {
+    return fs.readFileSync(this.filePath, "utf8");
+  }
 }
-module.exports = FileReader;
