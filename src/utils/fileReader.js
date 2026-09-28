@@ -9,3 +9,4 @@ class FileReader {
         return fs.readFileSync(this.filePath, 'utf8');
     }
 }
+module.exports = FileReader;
